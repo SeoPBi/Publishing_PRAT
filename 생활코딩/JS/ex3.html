@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>WEB1 - JavaScript</title>
+    </head>
+    <style>
+        .js {
+            font-weight:bold;
+            color:red;
+        }
+
+        #first {
+            color : green;
+        }
+
+        span{
+            color:blue;
+        }
+    </style>
+    <body>
+        <h1><a href="index.html">WEB</a></h1>
+        <input id="night_day" type="button" value="night" onclick="
+        if(document.querySelector('#night_day').value === 'night') {
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color='white';
+            document.querySelector('#night_day').value = 'day';
+        } else {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color='black';
+            document.querySelector('#night_day').value = 'night';    
+        }
+    ">
+
+        <h2 style="background-color: coral; color:powderblue"><span class="js">JavaScript란 무엇인가?</span></h2>
+        <p><span id="first" class="js">JavaScript</span> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaa<span class="js">JavaScript</span>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaa<span class="js">JavaScript</span>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaa<span class="js">JavaScript</span>aaaaaaaaaaaaaaaaaaaaaa
+        </p>
+    </body>
+</html>
